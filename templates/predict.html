@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+table {
+ border-collapse: collapse;
+ border: 1px solid green;
+}
+table ,th,td {
+ width: 500px;
+ height: 30px;
+ text-align: left;
+ 
+ text-align: center;
+}
+th {
+ background-color: green;
+ color: white;
+ text-align: center;
+}
+.home{
+ border: 1px;
+ text-align: center;
+ background-color:#00b3b3;
+ height: 50px;
+}
+.nav{
+    text-decoration: none;
+    color: red;
+    font-size: 30px;
+    font-weight: bold;
+}
+.data{
+    font-size: 20px;
+}
+.output{
+    color: red;
+    padding-left: 10%;
+}
+    </style>
+</head>
+<body>
+    <div class="home"><a href="/" class="nav">HOME</a></div>
+    <div class="data" style="background-color: #e6ffff; border-style: outset solid outset outset; border-radius: 20px; padding: 25px; padding-left: 35%;">
+        <p style="padding-left: 20%;">Entered Details</p>
+        {%for i in range(0,10)%}
+        <table>
+            <tr>
+                <td>{{list[i]}}</td>
+                <td>{{query[key[i]][0]}}</td>
+            </tr>
+        </table>
+        {%endfor%}
+     <p class="output">And your probability score is {{prob}}</p></div>
+</body>
+</html>

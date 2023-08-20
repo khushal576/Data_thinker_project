@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <style>
+    .heading{
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    font-size: 30px;
+    font-weight: bold;
+    }
+        
+    </style>
+</head>
+<body style="background-color: #e6ffff;">
+    <h1 class="heading">Placement Predictor</h1>
+    <div style="background-color: #00b3b3; border-style: outset solid outset outset; border-radius: 20px; padding: 25px; padding-left: 35%; font-size: 20px;">
+        <form method="Post">
+            <p class="st">Name : <input type="text" name="Name" maxlength="25"></p>
+            <p class="st">Gender : <input type="radio" name="Gender" value="M" checked="checked">Male <input type="radio" name="Gender" value="F" required>Female</p>
+            <p class="st">Board of 10th : <input type="radio" name="xboard" value="Central" checked="checked" required>Central <input type="radio" name="xboard" value="Others">Others</p>
+            <p class="st">Senior Secondary (10th marks) <input name="xmarks" type="number" step=0.01 min=0 max=100 required></p>
+            <p class="st">Board of 12th : <input type="radio" name="xiiboard" value="Central" checked="checked" required>Central <input type="radio" name="xiiboard" value="Others">Others</p>
+            <p class="st">Branch in 12th : <input type="radio" name="branch" value="Science" checked="checked" required> Science <input type="radio" name="branch" value="Commerce">Commerce <input type="radio" name="branch" value="Arts">Arts</p>
+            <p class="st">Senior Secondary (12th marks) <input name="xiimarks" type="number" step=0.01 min=34 max=100 required></p>
+            <p class="st">Graduation Percentage <input name="grade" type="number" step=0.01 min=34 max=100 required></p>
+            <p class="st">Graduation domain : <input type="radio" name="domain" value="Sci&Tech" checked="checked" required>Sci&Tech<input type="radio" name="domain" value="Comm&Mgmt">Comm&Mgmt</p>
+            <p class="st">Percentage in your MBA<input name="mba" type="number" step=0.01 min=34 max=100 required></p>
+            <p class="st">branch in mba : <input type="radio" name="subject" value="Mkt&HR" checked="checked" required>Marketing and HR <input type="radio" name="subject" value="Mkt&Fin">Marketing and Finance</p>
+            <p class="st">Do you have any work experince? : <input type="radio" name="workex" value="Yes" checked="checked">Yes <input type="radio" name="workex" value="No" required>No</p>
+            <input type="reset" style="background-color: coral;">
+            <input type="submit" style="background-color:coral;">
+        </form>
+    </div>
+</body>
+</html>
